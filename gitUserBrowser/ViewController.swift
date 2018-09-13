@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func getBtnPressed(_ sender: Any) {
+        userTxtField.resignFirstResponder()
         let username = userTxtField.text
             if username == nil || username == "" {
                 return
