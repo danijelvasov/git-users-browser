@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9DB3FDBB5E7F0EACE8CE209831140D24"
+               BlueprintIdentifier = "124084B2EAAE631944B39F36AE208A32"
                BuildableName = "Pods_gitUserBrowser.framework"
                BlueprintName = "Pods-gitUserBrowser"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9DB3FDBB5E7F0EACE8CE209831140D24"
+            BlueprintIdentifier = "124084B2EAAE631944B39F36AE208A32"
             BuildableName = "Pods_gitUserBrowser.framework"
             BlueprintName = "Pods-gitUserBrowser"
             ReferencedContainer = "container:Pods.xcodeproj">

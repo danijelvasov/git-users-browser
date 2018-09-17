@@ -8,5 +8,6 @@ target 'gitUserBrowser' do
   # Pods for gitUserBrowser
   pod 'Alamofire'
   pod 'SwiftyJSON'
-  
+pod 'RealmSwift'  
+
 end

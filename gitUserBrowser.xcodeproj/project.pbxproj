@@ -12,6 +12,9 @@
 		311A05FD21493848007EF165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311A05FB21493848007EF165 /* Main.storyboard */; };
 		311A05FF2149384F007EF165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311A05FE2149384F007EF165 /* Assets.xcassets */; };
 		311A06022149384F007EF165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311A06002149384F007EF165 /* LaunchScreen.storyboard */; };
+		31A81DBA214BDA27008201B7 /* SavedUsersTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A81DB9214BDA27008201B7 /* SavedUsersTableVC.swift */; };
+		31A81DBC214BEDA4008201B7 /* SavedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A81DBB214BEDA4008201B7 /* SavedUserCell.swift */; };
+		31A81DBE214BF9B9008201B7 /* RealmServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A81DBD214BF9B9008201B7 /* RealmServices.swift */; };
 		31EFD61B21493D2A00BA71F4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EFD61A21493D2A00BA71F4 /* Model.swift */; };
 		6E1E3D1770AA546A56F3A833 /* Pods_gitUserBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C886C97A2EF2319917850D3F /* Pods_gitUserBrowser.framework */; };
 /* End PBXBuildFile section */
@@ -24,6 +27,9 @@
 		311A05FE2149384F007EF165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		311A06012149384F007EF165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		311A06032149384F007EF165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31A81DB9214BDA27008201B7 /* SavedUsersTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUsersTableVC.swift; sourceTree = "<group>"; };
+		31A81DBB214BEDA4008201B7 /* SavedUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUserCell.swift; sourceTree = "<group>"; };
+		31A81DBD214BF9B9008201B7 /* RealmServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServices.swift; sourceTree = "<group>"; };
 		31EFD61A21493D2A00BA71F4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		90F559E0F42A31AAD9ADA28B /* Pods-gitUserBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gitUserBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gitUserBrowser/Pods-gitUserBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		C886C97A2EF2319917850D3F /* Pods_gitUserBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gitUserBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,9 +69,12 @@
 		311A05F621493848007EF165 /* gitUserBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				31A81DBD214BF9B9008201B7 /* RealmServices.swift */,
 				311A05F721493848007EF165 /* AppDelegate.swift */,
 				31EFD61A21493D2A00BA71F4 /* Model.swift */,
 				311A05F921493848007EF165 /* ViewController.swift */,
+				31A81DB9214BDA27008201B7 /* SavedUsersTableVC.swift */,
+				31A81DBB214BEDA4008201B7 /* SavedUserCell.swift */,
 				311A05FB21493848007EF165 /* Main.storyboard */,
 				311A05FE2149384F007EF165 /* Assets.xcassets */,
 				311A06002149384F007EF165 /* LaunchScreen.storyboard */,
@@ -168,11 +177,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-gitUserBrowser/Pods-gitUserBrowser-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,9 +218,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31A81DBA214BDA27008201B7 /* SavedUsersTableVC.swift in Sources */,
 				31EFD61B21493D2A00BA71F4 /* Model.swift in Sources */,
 				311A05FA21493848007EF165 /* ViewController.swift in Sources */,
 				311A05F821493848007EF165 /* AppDelegate.swift in Sources */,
+				31A81DBC214BEDA4008201B7 /* SavedUserCell.swift in Sources */,
+				31A81DBE214BF9B9008201B7 /* RealmServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
