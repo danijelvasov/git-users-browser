@@ -51,7 +51,6 @@ class ViewController: UIViewController{
         let userToSave = RealmUser(name: userInstance.name, location: userInstance.location, available: userInstance.available, numberOfRepos: userInstance.numberOfRepos)
         RealmSevice.sharedInstance.save(object: userToSave)
         let sucessMessage = RealmSevice.sharedInstance.message
-        print("SUCCESS MSG IS: \(sucessMessage)")
         if sucessMessage == "Saved" {
             let alert = UIAlertController(title: "User info saved", message: "", preferredStyle: UIAlertController.Style.alert)
             let ok = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
